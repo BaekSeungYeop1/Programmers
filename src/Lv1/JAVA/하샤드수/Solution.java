@@ -1,4 +1,4 @@
-package Lv1.하샤드수;
+package Lv1.JAVA.하샤드수;
 
 class Solution {
     public boolean solution(int x) {

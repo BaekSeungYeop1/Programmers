@@ -1,6 +1,4 @@
-package Lv1.자릿수더하기;
-
-import java.util.*;
+package Lv1.JAVA.자릿수더하기;
 
 public class Solution {
     public int solution(int n) {

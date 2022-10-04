@@ -1,4 +1,4 @@
-package Lv1.정수내림차순으로배치하기;
+package Lv1.JAVA.정수내림차순으로배치하기;
 
 import java.util.Arrays;
 

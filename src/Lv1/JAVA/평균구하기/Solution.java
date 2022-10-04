@@ -1,4 +1,4 @@
-package Lv1.평균구하기;
+package Lv1.JAVA.평균구하기;
 
 class Solution {
     public double solution(int[] arr) {
