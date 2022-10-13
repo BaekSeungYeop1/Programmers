@@ -1,15 +1,16 @@
 package Lv1.JAVA;
 
-import Lv1.JAVA.나누어떨어지는숫자배열.Solution;
+import Lv1.JAVA.비밀지도.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String args[]){
         Solution s = new Solution();
-        int arr[] = {5,9,7,10};
-        int divisor = 5;
-        System.out.println(Arrays.toString((s.solution(arr,divisor))));
+        int arr1[] = {46, 33, 33 ,22, 31, 50};
+        int arr2[] = {27 ,56, 19, 14, 14, 10};
+        int n = 6;
+        System.out.println(Arrays.toString((s.solution(n,arr1,arr2))));
     }
 }
 
