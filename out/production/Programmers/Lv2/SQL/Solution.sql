@@ -39,3 +39,32 @@ GROUP BY time
 Having time >= 9 and time <= 19
 ORDER BY time;
 
+-- NULL 처리하기
+SELECT ANIMAL_TYPE, IFNULL(NAME, "No name") AS NAME, SEX_UPON_INTAKE
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID;
+
+-- DATETIME에서 DATE로 형 변환
+SELECT ANIMAL_ID, NAME, Date_format(DATETIME, '%Y-%m-%d') AS 날짜
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID
+
+-- 중성화 여부 파악하기
+SELECT ANIMAL_ID, NAME,
+       IF(SEX_UPON_INTAKE LIKE 'Intact%', 'X', 'O') AS '중성화'
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID;
+
+-- 루시와 엘라 찾기
+SELECT ANIMAL_ID, NAME, SEX_UPON_INTAKE
+FROM ANIMAL_INS
+WHERE NAME LIKE 'Lucy' or NAME LIKE 'Ella' or NAME LIKE 'Pickle' or NAME LIKE 'Rogan' or NAME LIKE 'Sabrina' or NAME LIKE 'Mitty'
+-- where NAME in ('Lucy', 'Ella', 'Pickle', 'Rogan', 'Sabrina', 'Mitty')
+ORDER BY ANIMAL_INS;
+
+-- 가격이 제일 비싼 식품의 정보 출력하기
+SELECT *
+FROM FOOD_PRODUCT
+ORDER BY PRICE DESC
+    LIMIT 1;
+
