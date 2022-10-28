@@ -1,15 +1,16 @@
 package Lv1.JAVA;
 
-import Lv1.JAVA.삼총사.Solution;
+import Lv1.JAVA.실패율.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String args[]){
         Solution s = new Solution();
-        int[] numbers = {-2, 3, 0, 2, -5};
+        int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};
+        int N = 5;
 
-        System.out.println(s.solution(numbers));
+        System.out.println(Arrays.toString(s.solution(N, stages)));
     }
 }
 
