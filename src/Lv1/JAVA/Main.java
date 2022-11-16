@@ -1,17 +1,16 @@
 package Lv1.JAVA;
 
-import Lv1.JAVA.콜라문제.Solution;
+import Lv1.JAVA.푸드파이터대회.Solution;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String args[]){
+        
         Solution s = new Solution();
-        int a = 2;
-        int b = 1;
-        int n = 20;
+        int[] arr = {1,3,4,6};
 
-        System.out.println(s.solution(3,1,20));
+        System.out.println(s.solution(arr));
 //        System.out.println(s.solution(lottos,win_nums));
     }
 }
