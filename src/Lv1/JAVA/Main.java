@@ -1,6 +1,6 @@
 package Lv1.JAVA;
 
-import Lv1.JAVA.숫자짝궁.Solution;
+import Lv1.JAVA.기사단원의무기.Solution;
 
 import java.util.Arrays;
 
@@ -10,6 +10,9 @@ public class Main {
         Solution s = new Solution();
         String X = "100";
         String Y = "123450";
+        int number = 10;
+        int limit = 3;
+        int power = 2;
         int[][] board = {
                 {0,0,0,0,0},
                 {0,0,1,0,3},
@@ -19,7 +22,7 @@ public class Main {
         };
         int[] moves = {1,5,3,5,1,2,1,4};
 
-        System.out.println(s.solution(X, Y));
+        System.out.println(s.solution(number,limit,power));
 //        System.out.println(s.solution(lottos,win_nums));
     }
 }
