@@ -1,8 +1,6 @@
 package Lv1.JAVA;
 
-import Lv1.JAVA.기사단원의무기.Solution;
-
-import java.util.Arrays;
+import Lv2.JAVA.최댓값과최솟값.Solution;
 
 public class Main {
     public static void main(String args[]){
@@ -22,7 +20,9 @@ public class Main {
         };
         int[] moves = {1,5,3,5,1,2,1,4};
 
-        System.out.println(s.solution(number,limit,power));
+        String st = "1 2 3 4";
+
+        System.out.println(s.solution(st));
 //        System.out.println(s.solution(lottos,win_nums));
     }
 }
