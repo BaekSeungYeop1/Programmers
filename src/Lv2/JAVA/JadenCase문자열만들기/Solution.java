@@ -5,18 +5,19 @@ import java.util.StringTokenizer;
 
 public class Solution {
     public String solution(String s) {
-        String answer = "";
-        ArrayList<String> word = new ArrayList<>();
-        StringTokenizer st = new StringTokenizer(s, " ");
+        // 모든 소문자로 변환
+        String str = s.toLowerCase();
+        // 구분자를 포함하여 단어를 자름
+        StringTokenizer st = new StringTokenizer(str, " ",true);
+        StringBuilder sb = new StringBuilder();
+
+        // 첫 문자를 대문자로 변환하여 저장
         while (st.hasMoreTokens()){
-            word.add(st.nextToken());
+            String word = st.nextToken();
+            sb.append(Character.toUpperCase(word.charAt(0))).append(word.substring(1));
         }
-        for (int i = 0; i<word.size(); i++){
-            if (word.get(i).charAt(0)>='0'&& word.get(i).charAt(0)<= '9'){
 
-            }else if (word.get(i).charAt(0)>='a'&& word.get(i).charAt(0)<= 'z')
 
-        }
-        return answer;
+        return sb.toString();
     }
 }
