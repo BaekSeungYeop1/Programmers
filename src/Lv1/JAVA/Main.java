@@ -4,26 +4,26 @@ import Lv2.JAVA.최댓값과최솟값.Solution;
 
 public class Main {
     public static void main(String args[]){
-        
-        Solution s = new Solution();
-        String X = "100";
-        String Y = "123450";
-        int number = 10;
-        int limit = 3;
-        int power = 2;
-        int[][] board = {
-                {0,0,0,0,0},
-                {0,0,1,0,3},
-                {0,2,5,0,1},
-                {4,2,4,4,2},
-                {3,5,1,3,1}
-        };
-        int[] moves = {1,5,3,5,1,2,1,4};
 
-        String st = "1 2 3 4";
 
-        System.out.println(s.solution(st));
-//        System.out.println(s.solution(lottos,win_nums));
+    }
+
+    public int solution(int price) {
+        int answer = 0;
+
+        if(price>=100000){
+
+            if(price>=300000){
+
+                if(price>=500000){
+                    return (int) Math.round(price*0.8);
+                }
+                return (int) Math.round(price*0.9);
+            }
+            return (int) Math.round(price*0.95);
+        }
+
+        return answer;
     }
 }
 
